@@ -67,6 +67,7 @@ nav ul li a.dark-theme {
     text-align: center;
     height: 100vh;
     transition: background-color 0.5s;
+    padding: 0 20px;
 }
 
 .hero-content h1 {
@@ -150,6 +151,7 @@ nav ul li a.dark-theme {
     align-items: center;
     justify-content: space-around;
     margin: 20px 0;
+    flex-wrap: wrap;
 }
 
 .app-section.reverse {
@@ -164,6 +166,7 @@ nav ul li a.dark-theme {
 .app-text {
     max-width: 500px;
     text-align: left;
+    margin: 20px;
 }
 
 .app-text h3 {
@@ -190,11 +193,12 @@ nav ul li a.dark-theme {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .profile img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -239,6 +243,43 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .app-section {
+        flex-direction: column;
+    }
+
+    .app-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .app-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .profile {
+        flex-direction: column;
+    }
+
+    .info {
+        text-align: center;
+    }
+}
+
 
 
 
